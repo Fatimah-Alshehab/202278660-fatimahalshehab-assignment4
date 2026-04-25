@@ -2,113 +2,97 @@
 
 ## 📌 Overview
 
-This portfolio website is a front-end web application built using HTML, CSS, and JavaScript.
-It showcases projects, skills, and contact information while demonstrating advanced functionality such as API integration, state management, and dynamic user interaction.
+This project is a front-end web application built using HTML, CSS, and JavaScript.
+It demonstrates dynamic behavior, API integration, and user interaction within a structured and responsive design.
 
 ---
 
-## 🧱 Project Structure
+## 🧱 Architecture
 
-```
-202278660-fatimahalshehab-assignment3/
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── assets/
-│   └── images/
-├── docs/
-│   ├── ai-usage-report.md
-│   └── technical-documentation.md
-└── README.md
-```
+The application follows a simple client-side architecture:
+
+* HTML → structure
+* CSS → styling and layout
+* JavaScript → logic and interactivity
 
 ---
 
-## ⚙️ Core Features Implementation
+## ⚙️ Core Features
 
 ### 1. 🎨 UI & Layout
 
-* Built using semantic HTML structure
-* Styled with CSS using a glassmorphism design
-* Responsive layout using CSS Grid and media queries
+* Semantic HTML structure
+* CSS Grid for layout
+* Glassmorphism design style
+* Responsive design using media queries
 
 ---
 
 ### 2. 🔗 API Integration
 
-* GitHub API is used to fetch repositories dynamically
-* Implemented using `fetch()` with async/await
-* Displays repository name, description, and link
+* Uses GitHub API to fetch repositories
+* Implemented with async/await and fetch()
 
 ```javascript
 fetch("https://api.github.com/users/Fatimah-Alshehab/repos")
 ```
 
-* Includes basic error handling if the request fails
+* Dynamically creates project cards in the DOM
 
 ---
 
-### 3. 🧠 Complex Logic
+### 3. 🧠 JavaScript Functionality
+
+#### Dynamic Greeting
+
+* Displays greeting based on current time
 
 #### Project Filtering
 
-* Filters projects based on selected category
-* Uses `data-category` attributes
+* Filters projects using data attributes
+* Updates UI dynamically
+
+#### Show More / Show Less
+
+* Controls visibility of project cards
+* Improves user experience and layout clarity
 
 #### Visitor Timer
 
-* Tracks time spent on the website
-* Uses `setInterval()` to update every second
+* Tracks time spent on the page using setInterval
 
 #### Form Validation
 
-* Checks if fields are filled
-* Validates email format using regex
-* Displays dynamic feedback messages
+* Validates inputs and email format
+* Displays feedback messages
 
 ---
 
 ### 4. 🧠 State Management
 
-* Dark mode state is stored using `localStorage`
-* Font size adjustments persist during interaction
-* UI updates dynamically based on user actions
+* Dark mode stored in localStorage
+* UI updates based on saved state
 
 ---
 
-### 5. 🎯 DOM Manipulation
+### 5. ⚡ Performance Optimization
 
-* Elements are selected using `querySelector` and `getElementById`
-* Dynamic content (GitHub projects) is created using `createElement()`
-* Event listeners are used for interaction handling
-
----
-
-### 6. ⚡ Performance Optimization
-
-* Images use lazy loading to improve performance
-* Efficient event handling and minimal DOM updates
-* Clean and organized CSS to reduce redundancy
+* Lazy loading images
+* Efficient DOM updates
+* Minimal reflows and repaints
 
 ---
 
-## 🔄 User Interaction Flow
+## 🔄 Execution Flow
 
-1. User opens the website
-2. UI elements load with animations
-3. User can:
-
-   * Toggle dark/light mode
-   * Filter projects
-   * View GitHub repositories
-   * Submit contact form
-4. Timer starts automatically and updates continuously
+1. DOMContentLoaded triggers script execution
+2. UI elements initialize (theme, greeting, timer)
+3. GitHub API data is fetched and displayed
+4. User interactions update UI dynamically
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies
 
 * HTML5
 * CSS3
@@ -119,5 +103,5 @@ fetch("https://api.github.com/users/Fatimah-Alshehab/repos")
 
 ## 📌 Summary
 
-This project demonstrates the integration of modern web development concepts including dynamic data fetching, state management, and user interaction.
-The application is designed to be clean, responsive, and efficient while maintaining simplicity and clarity.
+The project demonstrates the integration of front-end development concepts including dynamic data fetching, UI state management, and interactive features.
+It is designed to be clean, responsive, and efficient.
