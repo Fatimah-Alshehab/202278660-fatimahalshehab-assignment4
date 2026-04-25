@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fatimah's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/images/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Portfolio of Fatimah Alshehab, a Software Engineering student at KFUPM. Projects, technical skills, and contact information.">
+</head>
+
+<body>
+  <button class="theme-toggle" id="themeToggle">🌙</button>
+
+  <header>
+    <nav class="navbar">
+
+      <ul class="nav-links">
+        <li><a href="#about">Home</a></li>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="font-control">
+    <button id="decreaseText">A-</button>
+    <span class="divider">|</span>
+    <button id="increaseText">A+</button>
+  </div>
+<main>
+
+<!-- HERO -->
+<section id="about" class="section hero">
+
+  <img class="profile-pic" src="assets/images/profile.jpg" alt="Fatimah Alshehab" loading="lazy">
+
+  <h1 class="hero-name">
+    <span id="greeting"></span>, I'm 
+    <span class="gradient-text">Fatimah Alshehab</span>
+  </h1>
+
+  <p class="hero-tagline">Software Engineering Student @KFUPM</p>
+</section>
+
+  <div class="timer-box">
+    <span id="timer"></span>
+  </div>
+<!-- ABOUT -->
+<section id="about-me" class="section">
+  <h2>About Me</h2>
+
+  <div class="glass-box">
+    <p>
+      I am a Software Engineering student at KFUPM with a strong interest in web development
+      and user interface design. I enjoy building clean, structured, and user-friendly websites.
+    </p>
+    <p>
+      I am continuously improving my technical skills and exploring new tools to create
+      meaningful digital solutions.
+    </p>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2> Featured <span class="gradient-text">Projects</span></h2>
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="csharp">C#</button>
+    <button class="filter-btn" data-filter="java">Java</button>
+    <button class="filter-btn" data-filter="design">Design</button>
+  </div>
+  <div class="projects-container">
+
+    <div class="glass-box project-card" data-category="csharp">
+      <img src="assets/images/project1.png" alt="Project 1" class="project-image" loading="lazy">
+      <h3>Folder Structure Visualizer</h3>
+      <p>A C# application that visualizes folder contents
+        using tree and bar views. Implements the Composite
+        and Strategy design patterns for flexible and structured rendering.</p>
+      <div class="project-tags">
+        <span class="tag purple">C#</span>
+        <span class="tag purple">Composite Pattern</span>
+        <span class="tag purple">Strategy Pattern</span>
+        <span class="tag purple">OOP</span>
+      </div>
+    </div>
+
+    <div class="glass-box project-card" data-category="csharp">
+      <img src="assets/images/project2.png" alt="Project 2" class="project-image" loading="lazy">
+      <h3>University Class Route Planner</h3>
+      <p>A C# application that reads university class data from Excel files and
+        allows users to enter CRNs to generate their daily schedule. The app
+        visualizes class locations and connects them on the university map
+        to display the route for a specific day.</p>
+      <div class="project-tags">
+        <span class="tag purple">C#</span>
+        <span class="tag purple">Excel Integration</span>
+        <span class="tag purple">OOP</span>
+        <span class="tag purple">Route Visualization</span>
+      </div>
+    </div>
+
+    <div class="glass-box project-card" data-category="java">
+      <img src="assets/images/project3.jpg" alt="Project 3" class="project-image" loading="lazy">
+      <h3>University Events Booking System</h3>
+      <p>A JavaFX application that allows users to browse and book university events,
+        while admins can create, update, and manage event listings. Built using Java
+        with a clear separation between user and admin functionalities.</p>
+      <div class="project-tags">
+        <span class="tag purple">Java</span>
+        <span class="tag purple">JavaFX</span>
+        <span class="tag purple">GUI</span>
+        <span class="tag purple">CRUD</span>
+        <span class="tag purple">Event Management</span>
+      </div>
+    </div>
+
+    <div class="glass-box project-card" data-category="design">
+      <img src="assets/images/project4.png" alt="Project 4" class="project-image" loading="lazy">
+      <h3>KFUPM Academic Co-Pilot</h3>
+      <p>Designed a desktop web platform in Figma to support KFUPM students in
+        their academic journey. The platform integrates a chatbot assistant,
+        collaborative study groups, and question creation features to enhance
+        learning and engagement.</p>
+      <div class="project-tags">
+        <span class="tag purple">Figma</span>
+        <span class="tag purple">UI/UX Design</span>
+         <span class="tag purple">Web Design</span>
+        <span class="tag purple">Prototyping</span>
+        <span class="tag purple">EdTech</span>
+      </div>
+    </div>
+
+    <p id="noProjectsMessage">
+      No projects found.
+    </p>
+  </div>
+  
+   <section id="github" class="section">
+      <h2>More <span class="gradient-text">Projects</span> from GitHub</h2>
+
+      <div id="github-projects" class="projects-container"></div>
+    </section>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Technical <span class="gradient-text">Skills</span></h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/python.svg" alt="Python" loading="lazy">
+      <div class="skill-text">
+        <h3>Python</h3>
+        <p>Programming Language</p>
+      </div>
+    </div>
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/javascript.svg" alt="JavaScript" loading="lazy">
+      <div class="skill-text">
+        <h3>JavaScript</h3>
+        <p>Web Programming</p>
+      </div>
+    </div>
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/java.svg" alt="Java" loading="lazy">
+      <div class="skill-text">
+        <h3>Java</h3>
+        <p>Programming Language</p>
+      </div>
+    </div>
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/c-sharp.svg" alt="C#" loading="lazy">
+      <div class="skill-text">
+        <h3>C#</h3>
+        <p>Application Development</p>
+      </div>
+    </div>
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/html.svg" alt="HTML" loading="lazy">
+      <div class="skill-text">
+        <h3>HTML</h3>
+        <p>Web Development</p>
+      </div>
+    </div>
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/css.svg" alt="CSS" loading="lazy">
+      <div class="skill-text">
+        <h3>CSS</h3>
+        <p>Web Development</p>
+      </div>
+    </div>
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/github.svg" alt="GitHub" loading="lazy">
+      <div class="skill-text">
+        <h3>GitHub</h3>
+        <p>Version Control</p>
+      </div>
+    </div>
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/notion.svg" alt="Notion" loading="lazy">
+      <div class="skill-text">
+        <h3>Notion</h3>
+        <p>Productivity Tool</p>
+      </div>
+    </div>
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/figma.svg" alt="Figma" loading="lazy">
+      <div class="skill-text">
+        <h3>Figma</h3>
+        <p>Design Tool</p>
+      </div>
+    </div>
+
+    <div class="skill-card glass-box">
+      <img src="assets/images/chat-gpt.svg" alt="ChatGPT" loading="lazy">
+      <div class="skill-text">
+        <h3>ChatGPT</h3>
+        <p>AI Assistant</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+    <div class="glass-box">
+    <p id="formMessage" class="form-message"></p>
+
+    <form class="contact-form">
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Firstname Lastname" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="youremail@gmail.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Any message you want..." required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+    </div>
+</section>
+
+</main>
+<footer class="footer">
+  <p>© 2026 Fatimah Alshehab. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
