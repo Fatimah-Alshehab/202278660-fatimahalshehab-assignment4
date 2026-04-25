@@ -289,12 +289,6 @@ body {
   padding: 20px;
 }
 
-.greeting-text {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-  color: #777;
-  font-weight: 500;
-}
 /* ================= PROJECTS ================= */
 
 .projects-container {
@@ -396,7 +390,7 @@ body {
 #github {
   max-width: 900px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .project-card a:hover {
@@ -472,6 +466,20 @@ body {
   opacity: 0.7;
 }
 
+#toggleProjects {
+  display: block;
+  margin: 20px auto;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  background: #7c3aed;
+  color: white;
+  cursor: pointer;
+}
+
+#toggleProjects:hover {
+  opacity: 0.9;
+}
 /* ================= CONTACT ================= */
 
 .contact-form {

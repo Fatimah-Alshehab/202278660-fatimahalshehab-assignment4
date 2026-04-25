@@ -237,5 +237,36 @@ setInterval(() => {
   }
 }, 1000);
 
+ // ---------------------------
+// Hide extra projects initially
+// ---------------------------
+const staticCards = document.querySelectorAll("#static-projects .project-card");
+
+staticCards.forEach((card, index) => {
+  if (index >= 2) {
+    card.style.display = "none";
+  }
+});
+
+// ---------------------------
+// Show More / Show Less Projects
+// ---------------------------
+let expanded = false;
+
+const toggleProjectsBtn  = document.getElementById("toggleProjects");
+
+if (toggleProjectsBtn ) {
+  toggleProjectsBtn .addEventListener("click", () => {
+
+    staticCards.forEach((card, index) => {
+      if (index >= 2) {
+        card.style.display = expanded ? "none" : "flex";
+      }
+    });
+
+    expanded = !expanded;
+    toggleProjectsBtn .textContent = expanded ? "Show Less" : "Show More";
+  });
+}
 });
 

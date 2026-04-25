@@ -75,7 +75,7 @@
     <button class="filter-btn" data-filter="java">Java</button>
     <button class="filter-btn" data-filter="design">Design</button>
   </div>
-  <div class="projects-container">
+  <div class="projects-container" id="static-projects">
 
     <div class="glass-box project-card" data-category="csharp">
       <img src="assets/images/project1.png" alt="Project 1" class="project-image" loading="lazy">
@@ -141,12 +141,14 @@
       No projects found.
     </p>
   </div>
-  
-   <section id="github" class="section">
-      <h2>More <span class="gradient-text">Projects</span> from GitHub</h2>
 
-      <div id="github-projects" class="projects-container"></div>
-    </section>
+  <button id="toggleProjects">Show More</button>
+</section>
+
+<section id="github" class="section">
+  <h2>More <span class="gradient-text">Projects</span> from GitHub</h2>
+
+  <div id="github-projects" class="projects-container"></div>
 </section>
 
 
