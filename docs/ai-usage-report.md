@@ -1,54 +1,58 @@
 # 🤖 AI Usage Report
 
-## 📌 Tools Used & Use Cases
+## 📌 Tools Used
 
-### ChatGPT
-
-* Assisted in debugging JavaScript issues
-* Helped implement GitHub API integration
-* Suggested improvements for UI consistency and layout
-* Provided guidance on structuring code and adding features (e.g., timer, filtering)
-* Assisted in writing documentation such as README and reports
+* ChatGPT
 
 ---
 
-## ⚖️ Benefits & Challenges
+## 🧠 How AI Was Used
 
-### Benefits
+AI was used as a supportive tool during development to:
 
-* Faster problem-solving and debugging
-* Clear explanations of JavaScript concepts
-* Helped improve code structure and readability
-* Assisted in implementing features that would otherwise take longer
+* Debug JavaScript issues
+* Assist with GitHub API integration
+* Improve UI layout and consistency
+* Suggest implementation of features such as timer and project toggle
+* Help structure documentation (README and reports)
 
-### Challenges
+---
 
-* Some suggestions required adjustment to fit the project structure
-* Needed to carefully review outputs to ensure correctness
-* Had to modify generated code to match assignment requirements
+## ⚖️ Benefits
+
+* Faster debugging and problem-solving
+* Better understanding of JavaScript concepts
+* Improved code organization and clarity
+* Helped implement features more efficiently
+
+---
+
+## ⚠️ Challenges
+
+* Some generated solutions required modification to fit the project
+* Needed to carefully review outputs for correctness
+* Ensured compatibility with existing code
 
 ---
 
 ## 🎓 Learning Outcomes
 
-* Improved understanding of API integration using `fetch()`
-* Learned how to manage state (e.g., dark mode and timer)
-* Strengthened skills in DOM manipulation and event handling
-* Gained experience in structuring clean and maintainable JavaScript code
-* Learned how to effectively use AI tools as a support tool rather than relying on them completely
+* Improved understanding of DOM manipulation
+* Learned how to integrate external APIs using fetch()
+* Gained experience in handling UI state (dark mode, toggles)
+* Strengthened debugging and problem-solving skills
 
 ---
 
-## 🛡️ Responsible Use & Modifications
+## 🛡️ Responsible Use
 
-* All AI-generated suggestions were reviewed and tested before use
-* Code was modified to fit the project requirements and personal coding style
-* Ensured that all implemented features were fully understood
-* Avoided copying code blindly and adapted solutions when necessary
+* All AI-generated code was reviewed and tested
+* Code was modified to match project requirements
+* Ensured full understanding of implemented features
+* Avoided copying without comprehension
 
 ---
 
 ## 📌 Summary
 
-AI tools were used as a supportive resource to enhance productivity, improve code quality, and assist in problem-solving.
-All final implementations were reviewed, modified, and understood to ensure originality and academic integrity.
+AI tools were used responsibly to support development, enhance productivity, and improve code quality while maintaining originality and understanding.
